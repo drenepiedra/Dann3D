@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Space+Grotesk:wght@400;500;700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#00aaff",
+            "background-light": "#f0f0f0",
+            "background-dark": "#0a0a0a",
+            "surface-dark": "#1a1a1a",
+          },
+          fontFamily: {
+            display: ["Space Grotesk"],
+          },
+          borderRadius: {
+            DEFAULT: "0.25rem",
+            lg: "0.5rem",
+            xl: "0.75rem",
+            full: "9999px"
+          },
+        },
+      },
+    };
+  </script>
+<title>Dan3D Innovations</title>
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%2300aaff'%3E%3Cpath clip-rule='evenodd' d='M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z' fill-rule='evenodd'/%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%2300aaff'%3E%3Cpath clip-rule='evenodd' d='M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z' fill-rule='evenodd'/%3E%3C/svg%3E" rel="shortcut icon" type="image/svg+xml"/>
+</head>
+<body class="bg-background-dark font-display text-slate-200">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-slate-800/80 bg-background-dark/80 px-10 py-3 backdrop-blur-sm">
+<div class="flex items-center gap-4">
+<svg class="h-6 w-6 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+<h2 class="text-lg font-bold tracking-tight text-white">3D Innovations</h2>
+</div>
+<nav class="hidden items-center gap-8 md:flex">
+<a class="text-sm font-medium text-slate-300 hover:text-primary" href="#">Inicio</a>
+<a class="text-sm font-medium text-slate-300 hover:text-primary" href="#about">Sobre Nosotros</a>
+<a class="text-sm font-medium text-slate-300 hover:text-primary" href="#services">Servicios</a>
+<a class="text-sm font-medium text-slate-300 hover:text-primary" href="#gallery">Galería</a>
+<a class="text-sm font-medium text-slate-300 hover:text-primary" href="#contact">Contacto</a>
+</nav>
+<div class="flex items-center gap-2">
+<a href="https://wa.me/5355358734" target="_blank" rel="noopener noreferrer" class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-slate-800 text-slate-200 transition-colors hover:bg-slate-700">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M187.58,144.84l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88,40,40,0,0,0,40-40A8,8,0,0,0,187.58,144.84ZM152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155l14.61-9.74,23,11.48A24,24,0,0,1,152,176ZM128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-6.54-.67L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Z"></path>
+</svg>
+</a>
+</div>
+</header>
+<main class="flex-1">
+<section class="relative flex h-[600px] items-center justify-center bg-cover bg-center text-center" style='background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuA34HVl-LjYvdbZkEiSGACVJxB-m2JKCXS_HXErPYIx521WnwwGYH1vh_4wLzOBeqBKwmB_HzfuN6W-amXxIgAd6gpAzaKRvPIrwYwLiUcoV-QR4BR5zoxfKcS0PAEG7l0KAuZKhlHZQ57t-OZpdzxIqRWZjwRJ-M8XXQRjs38doy6n9tO4iSJIIAWm0FXwTx1fcs6b7MNxjmOWssc5zuTMfYKd3Crf1WNNvam1aHuY4N9p-iiDl_FJrjz07W81P5C9rgTyAjzBlJ-S");'>
+<div class="container mx-auto px-4">
+<h1 class="text-4xl font-bold tracking-tighter text-white sm:text-5xl md:text-6xl">Transformando Ideas en Realidad Tridimensional</h1>
+<p class="mx-auto mt-4 max-w-2xl text-lg text-slate-200">Con 3D Innovations, tus conceptos cobran vida. Ofrecemos soluciones de impresión 3D personalizadas, desde prototipos rápidos hasta productos finales de alta calidad.</p>
+<button class="mt-8 inline-flex cursor-pointer items-center justify-center rounded-lg bg-primary px-6 py-3 text-lg font-bold text-black shadow-lg transition-transform hover:scale-105">Solicita tu cotización</button>
+</div>
+</section>
+<section class="py-20" id="about">
+<div class="container mx-auto px-4">
+<h2 class="mb-4 text-center text-3xl font-bold tracking-tight text-white">Sobre Nosotros</h2>
+<p class="mx-auto max-w-3xl text-center text-slate-400">En 3D Innovations, somos un equipo apasionado por la tecnología de impresión 3D. Con años de experiencia en el sector, nos dedicamos a ofrecer soluciones innovadoras y de alta calidad a nuestros clientes. Nuestra misión es impulsar la creatividad y la eficiencia, transformando ideas en productos tangibles y funcionales.</p>
+</div>
+</section>
+<section class="bg-surface-dark py-20" id="services">
+<div class="container mx-auto px-4">
+<h2 class="mb-12 text-center text-3xl font-bold tracking-tight text-white">Nuestros Servicios</h2>
+<div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+<div class="flex flex-col items-center rounded-lg bg-background-dark p-8 text-center shadow-md">
+<svg class="mb-4 text-primary" fill="currentColor" height="48px" viewBox="0 0 256 256" width="48px" xmlns="http://www.w3.org/2000/svg">
+<path d="M214.67,72H200V40a8,8,0,0,0-8-8H64a8,8,0,0,0-8,8V72H41.33C27.36,72,16,82.77,16,96v80a8,8,0,0,0,8,8H56v32a8,8,0,0,0,8,8H192a8,8,0,0,0,8-8V184h32a8,8,0,0,0,8-8V96C240,82.77,228.64,72,214.67,72ZM72,48H184V72H72ZM184,208H72V160H184Zm40-40H200V152a8,8,0,0,0-8-8H64a8,8,0,0,0-8,8v16H32V96c0-4.41,4.19-8,9.33-8H214.67c5.14,0,9.33,3.59,9.33,8Zm-24-52a12,12,0,1,1-12-12A12,12,0,0,1,200,116Z"></path>
+</svg>
+<h3 class="mb-2 text-xl font-bold text-white">Impresión 3D</h3>
+<p class="text-slate-400">Materializamos tus ideas con tecnología de punta, ofreciendo impresiones precisas y duraderas en una amplia gama de materiales.</p>
+</div>
+<div class="flex flex-col items-center rounded-lg bg-background-dark p-8 text-center shadow-md">
+<svg class="mb-4 text-primary" fill="currentColor" height="48px" viewBox="0 0 256 256" width="48px" xmlns="http://www.w3.org/2000/svg">
+<path d="M223.68,66.15,135.68,18h0a15.88,15.88,0,0,0-15.36,0l-88,48.17a16,16,0,0,0-8.32,14v95.64a16,16,0,0,0,8.32,14l88,48.17a15.88,15.88,0,0,0,15.36,0l88-48.17a16,16,0,0,0,8.32-14V80.18A16,16,0,0,0,223.68,66.15ZM128,32h0l80.34,44L128,120,47.66,76ZM40,90l80,43.78v85.79L40,175.82Zm96,129.57V133.82L216,90v85.78Z"></path>
+</svg>
+<h3 class="mb-2 text-xl font-bold text-white">Prototipado Rápido</h3>
+<p class="text-slate-400">Agilizamos el desarrollo de tus productos con prototipos funcionales y de alta fidelidad, permitiéndote iterar y perfeccionar tus diseños.</p>
+</div>
+<div class="flex flex-col items-center rounded-lg bg-background-dark p-8 text-center shadow-md">
+<svg class="mb-4 text-primary" fill="currentColor" height="48px" viewBox="0 0 256 256" width="48px" xmlns="http://www.w3.org/2000/svg">
+<path d="M227.31,73.37,182.63,28.68a16,16,0,0,0-22.63,0L36.69,152A15.86,15.86,0,0,0,32,163.31V208a16,16,0,0,0,16,16H92.69A15.86,15.86,0,0,0,104,219.31L227.31,96a16,16,0,0,0,0-22.63ZM51.31,160,136,75.31,152.69,92,68,176.68ZM48,179.31,76.69,208H48Zm48,25.38L79.31,188,164,103.31,180.69,120Zm96-96L147.31,64l24-24L216,84.68Z"></path>
+</svg>
+<h3 class="mb-2 text-xl font-bold text-white">Diseño Personalizado</h3>
+<p class="text-slate-400">Creamos soluciones a medida, desde el concepto inicial hasta el diseño final, adaptándonos a tus necesidades y especificaciones.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20" id="gallery">
+<div class="container mx-auto px-4">
+<h2 class="mb-12 text-center text-3xl font-bold tracking-tight text-white">Galería</h2>
+<div class="grid grid-cols-2 gap-4 md:grid-cols-4">
+<div class="aspect-square w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAKsUQoAkFEGDPCcDQwGAx8bGzDA8hIqjI28ikiqealcUUsnj2c2vsWWdubTM_uU4TPKIsvpqF4N_0G6u2GuG1fhDrCGatVszqHQsFYAuJUz5wXlNiYe1KpT4yTJZCiUGskVkuw1pzmEJsFac4Da-ILNrmcQW2ngi6dSXhEaw9iok6kp2izk-mCVeXdi44wqTjnOlaiAJQm9YCHP0hHyymzcowW3_kmXCwzMm0L3eT6MVk2F5Ar589qUpH-xDMvBYD2RRKVBSgxmfN4");'></div>
+<div class="aspect-square w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA09Jst3hCtMb5Z9613rKBHgM9kmKK1vpXyAr5_bIu1JMNvQ9lew6jaOKBc_GBOiyEHW8YDm1OQ6_eDhlEa0cRNsEgr_6yz_AND1tB8ZCWrIFQw6zkgT5aFYvrjR5N2RvVmro0lmfK_TLXYm7xcaXzZzKdMcTH3rsryiYdKszCzPlDD5KE1EbePvDetScIEPvOHgQrgchKyT8PneiEiYPJ58VVPgBpRrAriRRgCOlfFpCaSTzqEdD-WAX3HVVhfOOOoguTy_79SayB3");'></div>
+<div class="aspect-square w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB-NBsuSA1n-OoHzN8AeyCje1TGIdm0dB6DMb9ZvD15h9q6UEyGS0C5Fp0z0mpY9lFcmIYFAHcIgVOtjyrWMb7LV-8bRTRU2emWId6QBkft216h6ZgEStD3H7dSbbIHa40lgHwmMFwQQ9DZSl6djUnwlaMCx4DncrqatuwiCErznbM_EU86T_csih0H8Fp7ZOWXKdPpYGHT3EWMoPCUzId9oL3GLAjtPvvT97wtLBR09ayQIGaWpDDoci4k1__X6NKaySncSPgIL9E1");'></div>
+<div class="aspect-square w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBDgG1rU85V6yM4WfClPZDifD7ZUOXHOcfEARABFLdpxa7FZTP50wKGRlRO2izBHQ5pYTxlr_8TelQTHRMz078Lk2XopW1IWUfXmEAKtknhb6kMNtQiottCWVH2666WX_Gpx5C7qMZ2XDc8h0uKTa_FFSr73IInf_XO4QBcnGYj1d8JeN7rA0e6XrA4hZ7uxoNwIu_TyuCfb-bwad1Ix1hukC9k4Xlg3VOODegk2217oo6DARKS8I5-rpoXnKgW4jOICaCOJ6tTbqfq");'></div>
+</div>
+</div>
+</section>
+<section class="bg-surface-dark py-20" id="contact">
+<div class="container mx-auto px-4">
+<h2 class="mb-12 text-center text-3xl font-bold tracking-tight text-white">Contacto</h2>
+<div class="grid gap-12 lg:grid-cols-2">
+<div class="mx-auto max-w-xl">
+<form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+<input type="hidden" name="access_key" value="5ba64a54-bb87-40ab-b36d-0249a46cc09d" />
+<input type="hidden" name="subject" value="Nuevo mensaje de contacto - 3D Innovations" />
+<input type="hidden" name="from_name" value="3D Innovations Website" />
+<input type="hidden" name="to" value="drenepiedra@gmail.com" />
+<div>
+<label class="block text-sm font-medium text-slate-300" for="email">Correo electrónico</label>
+<input class="mt-1 block w-full rounded-lg border-slate-700 bg-slate-800 p-3 text-slate-200 placeholder-slate-500 shadow-sm focus:border-primary focus:ring-primary" id="email" name="email" placeholder="Tu correo electrónico" type="email" required/>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-300" for="message">Mensaje</label>
+<textarea class="mt-1 block w-full rounded-lg border-slate-700 bg-slate-800 p-3 text-slate-200 placeholder-slate-500 shadow-sm focus:border-primary focus:ring-primary" id="message" name="message" placeholder="Tu mensaje" rows="4" required></textarea>
+</div>
+<div class="text-right">
+<button class="inline-flex cursor-pointer items-center justify-center rounded-lg bg-primary px-6 py-2 text-base font-bold text-black shadow-md transition-colors hover:bg-primary/90" type="submit">Enviar</button>
+</div>
+</form>
+<div class="mt-12 text-center">
+<p class="text-slate-400">También puedes contactarnos a través de:</p>
+<div class="mt-4 grid grid-cols-1 gap-8 sm:grid-cols-3">
+<div class="flex flex-col items-center">
+<svg class="mb-2 text-primary" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"></path>
+</svg>
+<h3 class="font-bold text-white">Dirección</h3>
+<p class="text-sm text-slate-400">Calle California # 17 / Calle Regla y Calle Caridad , rpto Modelo mcpio Regla</p>
+</div>
+<div class="flex flex-col items-center">
+<svg class="mb-2 text-primary" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M187.58,144.84l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88,40,40,0,0,0,40-40A8,8,0,0,0,187.58,144.84ZM152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155l14.61-9.74,23,11.48A24,24,0,0,1,152,176ZM128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-6.54-.67L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Z"></path>
+</svg>
+<h3 class="font-bold text-white">WhatsApp</h3>
+<p class="text-sm text-slate-400">+53 55358734
+</p>
+</div>
+<div class="flex flex-col items-center">
+<svg class="mb-2 text-primary" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"></path>
+</svg>
+<h3 class="font-bold text-white">Correo Electrónico</h3>
+<p class="text-sm text-slate-400">drenepiedra@gmail.com</p>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full">
+<iframe allowfullscreen="" class="h-full w-full rounded-lg shadow-md" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14960.98768875319!2d-82.329306!3d23.11925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDA2JzQ5LjAiTiA4MsKwMjEnNTkuOCJX!5e0!3m2!1sen!2scu!4v1678886400000!5m2!1sen!2scu&q=Calle%20California%20%2317%20Calle%20Regla%20y%20Calle%20Caridad%2C%20rpto%20Modelo%2C%20mcpio%20Regla%2C%20La%20Habana%2C%20Cuba" style="border:0; filter: invert(90%)"></iframe>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="border-t border-slate-800 bg-surface-dark py-6 text-center">
+<div class="container mx-auto px-4">
+<p id="date" class="text-sm text-slate-400"></p>
+</div>
+</footer>
+</div>
+<a href="https://wa.me/5355358734" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 flex h-14 w-14 items-center justify-center rounded-full bg-primary text-black shadow-lg transition-transform hover:scale-110">
+<svg fill="currentColor" height="28px" viewBox="0 0 256 256" width="28px" xmlns="http://www.w3.org/2000/svg">
+<path d="M187.58,144.84l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88,40,40,0,0,0,40-40A8,8,0,0,0,187.58,144.84ZM152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155l14.61-9.74,23,11.48A24,24,0,0,1,152,176ZM128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-6.54-.67L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Z"></path>
+</svg>
+</a>
+</body></html>
+
+<script>
+  function updateCopyrightYear() {
+    var currentYear = new Date().getFullYear();
+    var dateElement = document.getElementById("date");
+    if (dateElement) {
+      dateElement.innerHTML = "© " + currentYear + " 3D Innovations. Todos los derechos reservados.";
+    }
+  }
+
+  // Ejecutar cuando se carga la página
+  document.addEventListener("DOMContentLoaded", updateCopyrightYear);
+
+  // Manejar envío del formulario
+  document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const submitButton = form.querySelector('button[type="submit"]');
+    const originalText = submitButton.textContent;
+
+    // Deshabilitar botón y mostrar loading
+    submitButton.disabled = true;
+    submitButton.innerHTML = 'Enviando...';
+
+    // Crear FormData
+    const formData = new FormData(form);
+
+    // Enviar formulario
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success) {
+        // Éxito
+        submitButton.innerHTML = '¡Enviado!';
+        submitButton.style.backgroundColor = '#10b981';
+        form.reset();
+
+        // Resetear botón después de 3 segundos
+        setTimeout(() => {
+          submitButton.disabled = false;
+          submitButton.innerHTML = originalText;
+          submitButton.style.backgroundColor = '';
+        }, 3000);
+      } else {
+        throw new Error('Error en el envío');
+      }
+    })
+    .catch(error => {
+      // Error
+      submitButton.innerHTML = 'Error - Reintentar';
+      submitButton.style.backgroundColor = '#ef4444';
+      submitButton.disabled = false;
+
+      console.error('Error:', error);
+    });
+  });
+</script>
